@@ -1,3 +1,5 @@
+version: '3.8'
+
 services:
   db:
     image: mysql:8.0
@@ -31,12 +33,12 @@ services:
     volumes:
       - ./files_drop_zone:/my_files_drop_zone  # Bind mount for session and other files
     networks:
-      - my_user_network
+      - my_network
 
 volumes:
   mysql_data:
     driver: local
 
 networks:
-  my_user_network:
+  my_network:
     driver: bridge
