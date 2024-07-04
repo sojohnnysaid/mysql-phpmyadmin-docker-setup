@@ -9,7 +9,7 @@ services:
       MYSQL_USER: user
       MYSQL_PASSWORD: userpassword
     ports:
-      - "3306:3306"
+      - "3326:3306"
     volumes:
       - mysql_data:/var/lib/mysql
       - ./files_drop_zone:/my_files_drop_zone  # Bind mount for SQL dumps and other files
