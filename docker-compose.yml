@@ -13,6 +13,8 @@ services:
     volumes:
       - mysql_data:/var/lib/mysql
       - ./files_drop_zone:/my_files_drop_zone  # Bind mount for SQL dumps and other files
+    networks:
+      - my_network
 
   phpmyadmin:
     image: phpmyadmin/phpmyadmin
@@ -23,15 +25,18 @@ services:
       PMA_HOST: db
       PMA_PORT: 3306
       PMA_ARBITRARY: 1
-      PMA_USER: root
-      PMA_PASSWORD: rootpassword
     restart: always
     ports:
       - 8080:80
     volumes:
       - ./files_drop_zone:/my_files_drop_zone  # Bind mount for session and other files
-      - ./phpmyadmin_config:/etc/phpmyadmin  # Bind mount for configuration files
+    networks:
+      - my_user_network
 
 volumes:
   mysql_data:
     driver: local
+
+networks:
+  my_user_network:
+    driver: bridge
