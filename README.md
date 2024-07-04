@@ -56,3 +56,6 @@ Simply drop any SQL dumps or files into the files_drop_zone directory, and they'
 
 🛠 Configuration
 You can modify the docker-compose.yml to change environment variables like MySQL passwords or the phpMyAdmin port to suit your needs.
+
+<img width="1013" alt="image" src="https://github.com/sojohnnysaid/mysql-phpmyadmin-docker-setup/assets/16521766/ab440d51-d516-40f5-9dbd-9dc30c4ea114">
+
