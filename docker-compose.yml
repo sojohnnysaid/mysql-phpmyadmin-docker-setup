@@ -14,11 +14,12 @@ services:
       - "3306:3306"
     volumes:
       - mysql_data:/var/lib/mysql
+      - ./mysql_file_drop_zone:/container_sql_dumps
 
   phpmyadmin:
     image: phpmyadmin/phpmyadmin
     container_name: phpmyadmin
-    links:
+    depends_on:
       - db
     environment:
       PMA_HOST: db
@@ -30,4 +31,3 @@ services:
 
 volumes:
   mysql_data:
-
