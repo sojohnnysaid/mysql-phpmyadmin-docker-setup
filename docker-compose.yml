@@ -27,7 +27,7 @@ services:
       PMA_ARBITRARY: 1
     restart: always
     ports:
-      - 8080:80
+      - 8085:80
     volumes:
       - ./files_drop_zone:/my_files_drop_zone  # Bind mount for session and other files
     networks:
