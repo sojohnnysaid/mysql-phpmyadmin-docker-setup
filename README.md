@@ -42,14 +42,14 @@ docker-compose up -d
 
 4. Access Your Tools 🛠️
 
-phpMyAdmin: http://localhost:8080
+phpMyAdmin: http://localhost:8085
 ```
 Server: db
 Username: root
 Password: rootpassword
 ```
 
-MySQL: Connect via any standard MySQL client at localhost:3306.
+MySQL: Connect via any standard MySQL client at localhost:3309.
 
 5. Drop Files & Go! 📤
 Simply drop any SQL dumps or files into the files_drop_zone directory, and they're ready to be accessed within both MySQL and phpMyAdmin!
