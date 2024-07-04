@@ -43,9 +43,11 @@ docker-compose up -d
 4. Access Your Tools 🛠️
 
 phpMyAdmin: http://localhost:8080
+```
 Server: db
 Username: root
 Password: rootpassword
+```
 
 MySQL: Connect via any standard MySQL client at localhost:3306.
 
