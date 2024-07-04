@@ -8,9 +8,13 @@ MySQL and phpMyAdmin server quickstart on Docker
 Here are the creds:
 
 environment:
+      
       MYSQL_ROOT_PASSWORD: rootpassword
+      
       MYSQL_DATABASE: mydb
+      
       MYSQL_USER: user
+      
       MYSQL_PASSWORD: userpassword
 
 Use root for full permissions
