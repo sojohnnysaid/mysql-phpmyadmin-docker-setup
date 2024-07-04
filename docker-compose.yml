@@ -1,3 +1,5 @@
+version: '3.8'
+
 services:
   db:
     image: mysql:8.0
@@ -23,6 +25,8 @@ services:
       PMA_HOST: db
       PMA_PORT: 3306
       PMA_ARBITRARY: 1
+      PMA_USER: root
+      PMA_PASSWORD: rootpassword
     restart: always
     ports:
       - 8080:80
