@@ -16,7 +16,7 @@ Follow these steps to get your MySQL database and phpMyAdmin running in no time:
 Clone or download this repository to get started.
 
 ```bash
-git clone https://github.com/your-username/your-repo-name.git
+git clone https://github.com/sojohnnysaid/mysql-phpmyadmin-docker-setup.git
 cd your-repo-name
 ```
 
