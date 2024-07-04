@@ -49,7 +49,7 @@ Username: root
 Password: rootpassword
 ```
 
-MySQL: Connect via any standard MySQL client at localhost:3309.
+MySQL: Connect via any standard MySQL client at localhost:3326.
 
 5. Drop Files & Go! 📤
 Simply drop any SQL dumps or files into the files_drop_zone directory, and they're ready to be accessed within both MySQL and phpMyAdmin!
