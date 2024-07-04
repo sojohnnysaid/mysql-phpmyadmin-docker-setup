@@ -14,7 +14,7 @@ services:
       - "3306:3306"
     volumes:
       - mysql_data:/var/lib/mysql
-      - ./mysql_file_drop_zone:/container_sql_dumps
+      - ./files_drop_zone:/my_files_drop_zone  # Bind mount for SQL dumps and other files
 
   phpmyadmin:
     image: phpmyadmin/phpmyadmin
@@ -28,6 +28,10 @@ services:
     restart: always
     ports:
       - 8080:80
+    volumes:
+      - ./files_drop_zone:/my_files_drop_zone  # Bind mount for session and other files
+      - ./phpmyadmin_config:/etc/phpmyadmin  # Bind mount for configuration files
 
 volumes:
   mysql_data:
+    driver: local
