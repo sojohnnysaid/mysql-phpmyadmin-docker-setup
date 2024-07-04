@@ -17,7 +17,7 @@ Clone or download this repository to get started.
 
 ```bash
 git clone https://github.com/sojohnnysaid/mysql-phpmyadmin-docker-setup.git
-cd your-repo-name
+cd mysql-phpmyadmin-docker-setup
 ```
 
 2. Set Up Your Files 📁
